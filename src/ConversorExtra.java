@@ -146,7 +146,7 @@ public class ConversorExtra {
 
         // Usa try-with-resources para garantir que o arquivo seja fechado
         // O 'true' no FileWriter indica que queremos adicionar (append) ao final do arquivo
-        try (PrintWriter out = new PrintWriter(new FileWriter("conversoes.log", true))) {
+        try (PrintWriter out = new PrintWriter(new FileWriter("conversoes_extras.log", true))) {
             out.println(timestamp + " - " + log);
         } catch (IOException e) {
             // Imprime um erro no console se não conseguir escrever o log
